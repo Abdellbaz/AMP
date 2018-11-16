@@ -1,0 +1,24 @@
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let myPoints = [];
+
+
+
+function update(){
+  requestAnimationFrame(update);
+  let myPoint = new Point(getRandomNumber(canvas.width),getRandomNumber(canvas.height),getRandomNumber(10),"#" + Math.floor(getRandomNumber(255*255*255)).toString(16));
+  myPoints.push(myPoint);
+  context.clearRect(0,0,canvas.width,canvas.height);
+  for (let i = 0; i < myPoints.length; i++) {
+    myPoints[i].draw(context);
+  }
+
+}
+
+update();
+
+function getRandomNumber(max){
+  return Math.random()*max;
+}

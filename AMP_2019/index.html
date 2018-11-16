@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>wiskundeportfolio 2019</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="myMenu">
+        <ol id="list"><h2>mijn menu</h2>
+          <li><a href="html/01/index.html" target="myIFrame">my Point </a> </li>
+          <li><a href="html/02/index.html" target="myIFrame">Connect the dots</a></li>
+          <li><a href="html/03/index.html" target="myIFrame">Pos, vel, acc</a></li>
+          <li><a href="html/04/index.html" target="myIFrame">bouncing balls</a></li>
+          <li><a href="html/05/index.html" target="myIFrame">spawning balls</a></li>
+          <li><a href="html/06/index.html" target="myIFrame">draggable points</a></li>
+          <li><a href="html/07/index.html" target="myIFrame">linear function</a></li>
+          <li><a href="html/08/index.html" target="myIFrame">intersecting Lines</a></li>
+          <li><a href="html/09/index.html" target="myIFrame">perpendicular line</a></li>
+          <li><a href="html/10/index.html" target="myIFrame">Median and centroid</a></li>
+          <li><a href="html/11/index.html" target="myIFrame">Altitude and orthocenter</a></li>
+          <li><a href="html/12/index.html" target="myIFrame">Perpendicular bisector and circumcenter</a></li>
+          <li><a href="html/13/index.html" target="myIFrame">Gears</a></li>
+          <li><a href="html/14/index.html" target="myIFrame">My Car</a></li>
+        </ol>
+        </div>
+      <iframe name="myIFrame" id="myIframe" src="html/01/index.html" width="" height=""></iframe>
+  </div>
+  <script>
+  let list = document.getElementById('list');
+  list.onclick = function(event) { makeWhite();
+  var target = event.target
+  target.style.color = "RED";}
+
+  let a = document.getElementsByTagName('a');
+  function makeWhite() {
+    for (var i = 0; i < a.length; i++)
+    { a[i].style.color = "yellow";}}
+
+  </script>
+  </body>
+</html>
