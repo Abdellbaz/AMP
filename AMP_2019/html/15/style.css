@@ -1,0 +1,21 @@
+h1{
+	text-align:center;
+}
+
+canvas{
+	display:block;
+	margin:auto;
+	border:1px #000 solid;
+	background-color:aliceblue;
+}
+
+#date,#time{
+	width:500px;
+	background-color:#CCCCCC;
+	display:block;
+	margin:auto;
+	font-size:36px;
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:700;
+}
