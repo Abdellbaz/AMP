@@ -7,7 +7,7 @@ const context = canvas.getContext('2d');
 	          var m = d.getMinutes();
 	          var s = d.getSeconds();
 	          var day = d.getDate();
-	          var month = d.getMonth();
+	          var month = d.getMonth()+1;
 	          var year = d.getFullYear();
 	          if (h<10) {h = "0" + h;}
 	          if (m<10) {m = "0" + m ;}
@@ -55,7 +55,7 @@ function animate(){
 
 			context.save();
 			context.translate(midX,midY);
-			context.rotate(d.getHours()*2*Math.PI/60)
+			context.rotate(d.getHours()*2*Math.PI/12)
 			context.drawImage(hours,-5,-94);
 			context.restore();
 
