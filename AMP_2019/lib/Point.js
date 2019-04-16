@@ -17,9 +17,10 @@ class Point {
     context.closePath();
   }
 
-  printCoord(context,text,color){
+  printCoord(context,text,color,w){
       context.fillStyle = "white";
-    context.fillRect(this.x+this.r-this.r*2,this.y+this.r-this.r*2.5,100, -20);
+      this.width =w||100;
+    context.fillRect(this.x+this.r-this.r*2,this.y+this.r-this.r*2.5,this.width, -20);
     context.fillStyle = color||"Black"
     context.font = "20px Arial";
     context.fillText(text,this.x+this.r-this.r*2,this.y+this.r-this.r*2.5);
