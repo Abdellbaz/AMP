@@ -1,0 +1,47 @@
+
+body{
+  background-color: aliceblue;
+  height: 100%;
+}
+
+html{
+  height: 100%;
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  display:grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100%;
+}
+
+#myMenu{
+  background-color: gray;
+  color:white;
+  grid-column: 1/2;
+}
+
+#myMenu a{
+  font-size: 110%;
+  color: yellow;
+  text-decoration: none;
+}
+ #myMenu a:hover {
+    color: Darkorange !important;
+}
+
+
+#myMenu ol{
+  list-style-type: none;
+}
+#myMenu li{
+margin: 0.4em;
+}
+
+#myIframe{
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+}
