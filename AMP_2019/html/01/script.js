@@ -4,11 +4,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let myPoints = [];
 
-
-
 function update(){
-  requestAnimationFrame(update);
-  let myPoint = new Point(getRandomNumber(canvas.width),getRandomNumber(canvas.height),getRandomNumber(10),"#" + Math.floor(getRandomNumber(255*255*255)).toString(16));
+  myPoint = new Point(getRandomNumber(canvas.width),getRandomNumber(canvas.height));  requestAnimationFrame(update);
   myPoints.push(myPoint);
   context.clearRect(0,0,canvas.width,canvas.height);
   for (let i = 0; i < myPoints.length; i++) {
